@@ -1,11 +1,20 @@
-import React from 'react';
+import React from 'react'
+import { useState } from 'react'
 
-function App() {
+const App = () => {
+  
+const [time, settime] = useState(new Date().toLocaleTimeString())
+
+setInterval(() =>{
+  settime(new Date().toLocaleTimeString());
+}, 1000)
+
+
   return (
     <div>
-      <h1>Hey there!</h1>
+      <h1>{time}</h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
