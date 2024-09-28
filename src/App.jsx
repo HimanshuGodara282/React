@@ -11,8 +11,8 @@ setInterval(() =>{
 
 
   return (
-    <div>
-      <h1>{time}</h1>
+    <div className='flex h-screen items-center justify-center bg-gray-600'>
+      <h1 className='text-9xl text-white'>{time}</h1>
     </div>
   )
 }
